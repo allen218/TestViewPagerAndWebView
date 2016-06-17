@@ -73,6 +73,8 @@ public class CustomWebView extends WebView {
 
         //如果当前是下滑或者是webview页面内部的左滑就让事件正常传递
         if ("1".equals(JSActionInterface.currrentState) || isY) {
+            //还原
+            JSActionInterface.currrentState = "0";
             return super.onTouchEvent(event);
         }
 
@@ -94,9 +96,6 @@ public class CustomWebView extends WebView {
 
             }
         }
-
-        //还原
-        JSActionInterface.currrentState = "0";
 
         return false;
     }
