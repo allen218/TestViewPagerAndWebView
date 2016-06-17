@@ -35,7 +35,7 @@ public class NormalFragment extends Fragment {
         mWebView.setSaveEnabled(true);
         mWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         mWebView.addJavascriptInterface(new JSActionInterface(), "jsAction");
-        mWebView.loadUrl("http://m.xiu.com/H5/H5Demo/index.html");
+        mWebView.loadUrl("http://m.xiu.com/H5/2016/0510/menswear.html");
     }
 
 }
