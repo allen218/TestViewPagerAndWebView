@@ -28,7 +28,6 @@ public class CustomViewPager extends ViewPager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        JSActionInterface.currrentState = "0";
         return false;
     }
 

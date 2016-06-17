@@ -94,6 +94,10 @@ public class CustomWebView extends WebView {
 
             }
         }
+
+        //还原
+        JSActionInterface.currrentState = "0";
+
         return false;
     }
 }
